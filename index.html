@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
 </head>
 <body>
@@ -79,5 +81,120 @@
             </div>
         </div>
     </section>
+
+
+    <section>
+        <div class="container">
+            <div class="kotak">
+
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container c-slider">
+            <div class="slider-parent">
+                <div class="slider-wrapper">
+                    <div class="">
+                        <div class="slider">
+                            <img src="./assets/content/customers/figma-logo-6abb977c1c8318c29905f44a17e3c4bc 1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="slider">
+                            <img src="./assets/content/customers/figma-logo-6abb977c1c8318c29905f44a17e3c4bc 1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="slider">
+                            <img src="./assets/content/customers/figma-logo-6abb977c1c8318c29905f44a17e3c4bc 1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="slider">
+                            <img src="./assets/content/customers/figma-logo-6abb977c1c8318c29905f44a17e3c4bc 1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="slider">
+                            <img src="./assets/content/customers/figma-logo-6abb977c1c8318c29905f44a17e3c4bc 1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="slider">
+                            <img src="./assets/content/customers/figma-logo-6abb977c1c8318c29905f44a17e3c4bc 1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="slider">
+                            <img src="./assets/content/customers/figma-logo-6abb977c1c8318c29905f44a17e3c4bc 1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="slider">
+                            <img src="./assets/content/customers/figma-logo-6abb977c1c8318c29905f44a17e3c4bc 1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="slider">
+                            <img src="./assets/content/customers/figma-logo-6abb977c1c8318c29905f44a17e3c4bc 1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="slider">
+                            <img src="./assets/content/customers/figma-logo-6abb977c1c8318c29905f44a17e3c4bc 1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="slider">
+                            <img src="./assets/content/customers/figma-logo-6abb977c1c8318c29905f44a17e3c4bc 1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-arrow">
+                    <div class="arrow-next">
+                        <img src="./assets/briefcase.svg" alt="">
+                    </div>
+                    <div class="arrow-prev">
+                        <img src="./assets/briefcase.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(()=>{
+            $('.slider-wrapper').slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: false,
+                variableWidth: false,
+                draggable: true,
+                speed: 400,
+                centerMode: true,
+            });
+
+
+
+        });
+
+
+        $('.arrow-prev').click(()=>{
+            $('.slider-wrapper').slick('slickPrev')
+        });
+        
+        $('.arrow-next').click(()=>{
+            $('.slider-wrapper').slick('slickNext')
+        });
+    </script>
 </body>
 </html>
