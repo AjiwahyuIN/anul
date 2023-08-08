@@ -15,6 +15,10 @@
     <!-- slick -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 </head>
 <body>
    <!-- navbar -->
@@ -93,7 +97,8 @@
     </section>
 
     <section>
-        <div class="container c-slider">
+        <div class="container c-slider" data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom">
             <div class="slider-parent">
                 <div class="slider-wrapper">
                     <div class="">
@@ -165,11 +170,15 @@
         </div>
     </section>
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script>
+
+        AOS.init();
+
+
         $(document).ready(()=>{
             $('.slider-wrapper').slick({
                 infinite: true,
